@@ -2,7 +2,16 @@ package com.example.demo.student;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "student")
 public class Student {
+
+    @Id
     private long id;
     private String name;
     private int age;
