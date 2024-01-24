@@ -16,4 +16,8 @@ public class StudentService {
     public List<Student> getStudents() {
         return studentRepository.findAll();
     }
+
+    public void createStudent(Student student) {
+        System.out.println(student);
+    }
 }
